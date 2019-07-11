@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_body_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center"
+            android:orientation="horizontal"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp">
+
+            <ImageView
+                android:id="@+id/img_icon"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_marginBottom="35dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/ic_check" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/tv_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:textColor="@color/colorLetter"
+                    tools:text="N. Registro 34" />
+
+                <TextView
+                    android:id="@+id/tv_credor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:textColor="@color/colorLetter"
+                    tools:text="Credor AFMS veiculos LTDA" />
+
+                <TextView
+                    android:id="@+id/tv_devedor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:textColor="@color/colorLetter"
+                    tools:text="Devedor: Fernando alves" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_more"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="5dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_back" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#86c7c4c4" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_load"
+        tools:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+
+</LinearLayout>
